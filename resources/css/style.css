@@ -1,0 +1,435 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Georgia, serif;
+    line-height: 1.4;
+}
+
+/* base */
+
+h1 {
+    color: rgb(170, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    line-height: 1.4;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+h2 {
+    color: #a1845c;
+    font-size: 2rem;
+    padding: 2rem 0 1rem 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: rgb(105, 105, 105);
+    line-height: 1.4;
+    letter-spacing: 0.01rem;
+    margin: 1.5rem 0;
+}
+
+/* container */
+
+.container {
+    padding: 0 1rem 2rem 1rem;
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .container {
+        padding: 0;
+    }
+}
+
+/* header menu */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #e9eff1;
+    height: 4rem;
+    align-items: center;
+}
+
+/* landscape tablet and desktop 
+header*/
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .menu {
+        justify-content: flex-end;
+    }
+    .menu p {
+        display: inherit;
+    }
+    .menu-icons {
+        display: none;
+    }
+    .menu-icons--p {
+        padding: 0 1.5rem 0 1rem;
+    }
+    .logo {
+        display: inline-flex;
+        align-items: center;
+        margin-right: auto;
+        padding-left: 1.5rem;
+    }
+    span {
+        color: rgb(170, 0, 0);
+    }
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-text h3 {
+    color: rgb(105, 105, 105);
+}
+
+.heading-variant {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+/* button start here */
+
+.hero-button {
+    display: inline-block;
+    font-family: Georgia, serif;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(170, 0, 0);
+    padding: 1rem 1.5rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.08rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.hero-button .icon {
+    margin-left: 0.5rem;
+    transition-property: margin-left;
+    transition-duration: 600ms;
+}
+
+.hero-button:hover .icon {
+    margin-left: 1rem;
+}
+
+/* button start here landscape tablet and desktop */
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .hero-button {
+        width: inherit;
+        margin-top: 2rem;
+    }
+}
+
+/* landscape tablet and desktop 
+hero */
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .hero {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+    .hero-image {
+        width: 60%;
+        padding: 0 1.5rem 2rem 1.5rem;
+    }
+    .hero-text {
+        width: 40%;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+}
+
+/* news */
+
+.news-detail {
+    background-color: rgb(232, 232, 232);
+    font-size: 1rem;
+    font-family: Georgia, serif;
+    color: rgb(105, 105, 105);
+    letter-spacing: 0.05rem;
+    word-spacing: 0.05rem;
+}
+
+.news-detail img {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.news-detail p {
+    padding: 0 0 1rem 0;
+}
+
+.news-detail--text h3 {
+    color: #a1845c;
+}
+
+.news-detail a {
+    text-decoration: none;
+    color: rgb(170, 0, 0);
+    font-weight: bold;
+}
+
+/* landscape tablet and desktop 
+news*/
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .news-main--container {
+        width: 100%;
+        display: flex;
+    }
+    .news-big--content {
+        display: inherit;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        flex-direction: column;
+        width: 60%;
+    }
+    .news-main--img {
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        width: 100%;
+    }
+    .news-big--content h2 {
+        padding-bottom: 2rem;
+        font-weight: bold;
+        padding-left: 0;
+    }
+    .news-big--content p {
+        font-size: 1rem;
+        color: rgb(105, 105, 105);
+        padding-bottom: 2rem;
+        letter-spacing: 0.05rem;
+    }
+    em {
+        font-style: italic;
+        color: rgb(170, 0, 0);
+    }
+    .news-detail {
+        display: inline-flex;
+    }
+    .news-detail p {
+        padding: 0;
+        padding-top: 0.5rem;
+    }
+    .news-detail--img {
+        width: 35%;
+        padding: 1rem 1rem;
+    }
+    .news-small-containers {
+        flex-direction: column;
+        width: 40%;
+        display: flex;
+        padding: 2rem 0;
+    }
+    .news-detail--text {
+        color: rgb(105, 105, 105);
+    }
+    .news-detail--text h3 {
+        color: #a1845c;
+        margin-bottom: 0;
+        padding-bottom: 0.5rem;
+    }
+}
+
+/*  start learning */
+
+.learning {
+    background-color: rgb(245, 245, 245);
+    overflow: auto;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.learning h1 {
+    text-align: center;
+}
+
+.learning h3 {
+    letter-spacing: .025em;
+    padding: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.learning a {
+    text-decoration: none;
+}
+
+.learning h3:hover {
+    transform: translateY(-1px);
+    transition: all .15s ease;
+}
+
+.course {
+    background-color: rgb(232, 232, 232);
+}
+
+/*  start learning 
+landscape tablet and desktop */
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .learning {
+        text-align: left;
+        align-content: space-around;
+        padding: 0 4.5rem;
+    }
+    .learning-boxes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .learning img {
+        width: 100%;
+    }
+    .learning h3 {
+        box-shadow: none;
+        color: #a1845c;
+        border-radius: none;
+        padding: 0 0;
+        margin: 1rem 0 0.8rem 0;
+    }
+    .course {
+        background-color: rgb(232, 232, 232);
+        margin-bottom: 2rem;
+        flex-basis: 30%;
+    }
+    .categories {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+        color: rgb(84, 153, 199);
+        font-weight: bold;
+    }
+    .course-text {
+        padding: 0 1rem 1rem 1rem;
+        color: rgb(105, 105, 105);
+    }
+}
+
+/* thesis */
+
+.thesis-heading {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.thesis {
+    background-color: rgb(232, 232, 232);
+}
+
+video {
+    width: 100%;
+}
+
+/*  thesis
+landscape tablet and desktop */
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .thesis-content {
+        display: inline-flex;
+        padding: 2rem 0rem 2rem 1rem;
+    }
+    .thesis-video {
+        width: 60%;
+        padding-left: 1rem;
+    }
+    .thesis-heading {
+        text-align: center;
+    }
+    .thesis-video--heading {
+        color: rgb(170, 0, 0);
+    }
+    .thesis-design {
+        width: 40%;
+        display: inline;
+        padding-left: 1rem;
+    }
+    .thesis-design--container {
+        display: inline-flex;
+        width: 100%;
+        background-color: rgb(245, 245, 245);
+    }
+    .thesis-img {
+        width: 35%;
+        height: auto;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .thesis-img img {
+        width: 100%;
+    }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    background-color: #e9eff1;
+    height: 6rem;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.01rem;
+}
+
+.terms-privacy {
+    display: none;
+}
+
+.social-media {
+    margin-left: 1rem;
+}
+
+.terms-privacy__social-media {
+    display: flex;
+    align-items: center;
+}
+
+/*  footer
+landscape tablet and desktop */
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .terms-privacy {
+        display: inherit;
+    }
+    footer {
+        justify-content: flex-end;
+        padding: 0 1rem;
+    }
+    .terms-privacy__social-media {
+        margin-left: auto;
+        padding-left: 1.5rem;
+        display: inline-flex;
+        align-items: center;
+    }
+}
